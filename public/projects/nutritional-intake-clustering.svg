@@ -1,0 +1,136 @@
+<svg width="800" height="480" viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="480" fill="#0C0E12" />
+  
+  <!-- Editorial Grid Background -->
+  <line x1="60" y1="60" x2="740" y2="60" stroke="#1E232D" stroke-width="1" />
+  <line x1="60" y1="130" x2="740" y2="130" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="60" y1="200" x2="740" y2="200" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="60" y1="270" x2="740" y2="270" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="60" y1="340" x2="740" y2="340" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="60" y1="380" x2="740" y2="380" stroke="#1E232D" stroke-width="1" />
+
+  <line x1="60" y1="60" x2="60" y2="380" stroke="#1E232D" stroke-width="1" />
+  <line x1="430" y1="60" x2="430" y2="380" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="740" y1="60" x2="740" y2="380" stroke="#1E232D" stroke-width="1" />
+
+  <!-- Title / Label -->
+  <text x="60" y="44" fill="#64748B" font-family="monospace" font-size="11" letter-spacing="1.5">FIG 04 // TUGAS AKHIR: K-MEANS NUTRITIONAL SEGMENTATION</text>
+  <text x="740" y="44" text-anchor="end" fill="#10B981" font-family="monospace" font-size="11" font-weight="600">UNIV. MERCU BUANA // CAPSTONE</text>
+
+  <!-- Left: 2D Cluster Space Scatter Plot -->
+  <text x="60" y="86" fill="#94A3B8" font-family="monospace" font-size="10" font-weight="600">K-MEANS CLUSTER PROJECTIONS (CALORIES VS. MACRONUTRIENTS)</text>
+
+  <!-- Scatter Axes Sub-labels -->
+  <text x="70" y="110" fill="#64748B" font-family="monospace" font-size="9">▲ PROTEIN / BALANCE RATIO</text>
+  <text x="390" y="370" text-anchor="end" fill="#64748B" font-family="monospace" font-size="9">DAILY CALORIES (KCAL) ▶</text>
+
+  <!-- Cluster 1: Balanced Intake (Emerald) -->
+  <g opacity="0.85">
+    <ellipse cx="230" cy="180" rx="65" ry="45" stroke="#10B981" stroke-width="1" stroke-dasharray="2 2" fill="#064E3B" fill-opacity="0.15" />
+    <circle cx="210" cy="170" r="3.5" fill="#10B981" />
+    <circle cx="225" cy="190" r="4" fill="#34D399" />
+    <circle cx="240" cy="165" r="3" fill="#10B981" />
+    <circle cx="215" cy="195" r="3.5" fill="#10B981" />
+    <circle cx="250" cy="185" r="4" fill="#34D399" />
+    <circle cx="235" cy="175" r="3" fill="#10B981" />
+    <circle cx="200" cy="180" r="3" fill="#34D399" />
+    <circle cx="260" cy="170" r="3.5" fill="#10B981" />
+    <circle cx="245" cy="200" r="3" fill="#34D399" />
+    <!-- Centroid C1 -->
+    <path d="M 225 180 L 235 180 M 230 175 L 230 185" stroke="#FFFFFF" stroke-width="2.5" />
+    <circle cx="230" cy="180" r="7" stroke="#34D399" stroke-width="1.5" fill="none" />
+  </g>
+
+  <!-- Cluster 2: High Calorie / Excess Fat (Amber) -->
+  <g opacity="0.85">
+    <ellipse cx="340" cy="240" rx="55" ry="40" stroke="#F59E0B" stroke-width="1" stroke-dasharray="2 2" fill="#78350F" fill-opacity="0.15" />
+    <circle cx="320" cy="230" r="3.5" fill="#F59E0B" />
+    <circle cx="335" cy="250" r="4" fill="#FBBF24" />
+    <circle cx="350" cy="225" r="3" fill="#F59E0B" />
+    <circle cx="360" cy="245" r="3.5" fill="#FBBF24" />
+    <circle cx="330" cy="260" r="3" fill="#F59E0B" />
+    <circle cx="355" cy="235" r="4" fill="#FBBF24" />
+    <circle cx="370" cy="250" r="3" fill="#F59E0B" />
+    <!-- Centroid C2 -->
+    <path d="M 335 240 L 345 240 M 340 235 L 340 245" stroke="#FFFFFF" stroke-width="2.5" />
+    <circle cx="340" cy="240" r="7" stroke="#FBBF24" stroke-width="1.5" fill="none" />
+  </g>
+
+  <!-- Cluster 3: Deficit Intake (Sky Blue) -->
+  <g opacity="0.85">
+    <ellipse cx="130" cy="280" rx="50" ry="38" stroke="#38BDF8" stroke-width="1" stroke-dasharray="2 2" fill="#0C4A6E" fill-opacity="0.15" />
+    <circle cx="115" cy="270" r="3.5" fill="#38BDF8" />
+    <circle cx="130" cy="290" r="4" fill="#7DD3FC" />
+    <circle cx="145" cy="265" r="3" fill="#38BDF8" />
+    <circle cx="120" cy="295" r="3" fill="#7DD3FC" />
+    <circle cx="150" cy="285" r="3.5" fill="#38BDF8" />
+    <circle cx="135" cy="275" r="3" fill="#7DD3FC" />
+    <!-- Centroid C3 -->
+    <path d="M 125 280 L 135 280 M 130 275 L 130 285" stroke="#FFFFFF" stroke-width="2.5" />
+    <circle cx="130" cy="280" r="7" stroke="#7DD3FC" stroke-width="1.5" fill="none" />
+  </g>
+
+  <!-- Cluster Legend Badges -->
+  <g transform="translate(70, 335)">
+    <circle cx="6" cy="6" r="4" fill="#10B981" />
+    <text x="16" y="9" fill="#A7F3D0" font-family="monospace" font-size="9">C1: SEIMBANG</text>
+
+    <circle cx="115" cy="6" r="4" fill="#F59E0B" />
+    <text x="125" y="9" fill="#FDE68A" font-family="monospace" font-size="9">C2: BERLEBIH / FAT</text>
+
+    <circle cx="245" cy="6" r="4" fill="#38BDF8" />
+    <text x="255" y="9" fill="#BAE6FD" font-family="monospace" font-size="9">C3: DEFISIT ENERGI</text>
+  </g>
+
+  <!-- Right: Elbow Curve & Cluster Profile -->
+  <text x="460" y="86" fill="#94A3B8" font-family="monospace" font-size="10" font-weight="600">OPTIMAL K (ELBOW INERTIA &amp; SILHOUETTE)</text>
+
+  <!-- Mini Elbow Graph Frame -->
+  <rect x="460" y="102" width="260" height="90" rx="4" fill="#0A0D14" stroke="#1E293B" stroke-width="1" />
+  <!-- Elbow Curve Path -->
+  <path d="M 475 125 Q 500 155 535 170 T 600 178 T 700 182" fill="none" stroke="#60A5FA" stroke-width="2" />
+  <circle cx="475" cy="125" r="3" fill="#60A5FA" />
+  <circle cx="505" cy="155" r="3" fill="#60A5FA" />
+  <circle cx="535" cy="170" r="5" fill="#F59E0B" stroke="#FFFFFF" stroke-width="1.5" />
+  <circle cx="585" cy="177" r="3" fill="#60A5FA" />
+  <circle cx="640" cy="180" r="3" fill="#60A5FA" />
+  <circle cx="700" cy="182" r="3" fill="#60A5FA" />
+  
+  <!-- Elbow Pointer Callout -->
+  <line x1="535" y1="170" x2="560" y2="135" stroke="#F59E0B" stroke-width="1" />
+  <rect x="560" y="122" width="145" height="22" rx="3" fill="#451A03" stroke="#F59E0B" stroke-width="1" />
+  <text x="632" y="136" text-anchor="middle" fill="#FEF3C7" font-family="monospace" font-size="8" font-weight="600">OPTIMAL INFLECTION (K=3)</text>
+
+  <!-- Macronutrient Centroid Profiles -->
+  <text x="460" y="218" fill="#94A3B8" font-family="monospace" font-size="10" font-weight="600">CLUSTER MACRONUTRIENT BENCHMARK</text>
+
+  <!-- Metric 1: Calories -->
+  <text x="460" y="240" fill="#CBD5E1" font-family="monospace" font-size="10">Kalori Harian (Mean kcal)</text>
+  <rect x="460" y="246" width="260" height="8" rx="2" fill="#1E293B" />
+  <rect x="460" y="246" width="180" height="8" rx="2" fill="#10B981" />
+  <text x="725" y="253" text-anchor="end" fill="#A7F3D0" font-family="monospace" font-size="9" font-weight="600">1,950 kcal</text>
+
+  <!-- Metric 2: Protein -->
+  <text x="460" y="272" fill="#CBD5E1" font-family="monospace" font-size="10">Protein Intake (gram)</text>
+  <rect x="460" y="278" width="260" height="8" rx="2" fill="#1E293B" />
+  <rect x="460" y="278" width="140" height="8" rx="2" fill="#3B82F6" />
+  <text x="725" y="285" text-anchor="end" fill="#93C5FD" font-family="monospace" font-size="9" font-weight="600">62.4 g</text>
+
+  <!-- Metric 3: Lemak & Karbohidrat -->
+  <text x="460" y="304" fill="#CBD5E1" font-family="monospace" font-size="10">Rasio Lemak &amp; Karbohidrat</text>
+  <rect x="460" y="310" width="260" height="8" rx="2" fill="#1E293B" />
+  <rect x="460" y="310" width="165" height="8" rx="2" fill="#F59E0B" />
+  <text x="725" y="317" text-anchor="end" fill="#FDE68A" font-family="monospace" font-size="9" font-weight="600">Normal Band</text>
+
+  <!-- Institutional Tag -->
+  <rect x="460" y="335" width="260" height="28" rx="4" fill="#172554" stroke="#1D4ED8" stroke-width="1" />
+  <text x="590" y="352" text-anchor="middle" fill="#DBEAFE" font-family="monospace" font-size="9" font-weight="600">UNIVERSITAS MERCU BUANA — SKRIPSI SI</text>
+
+  <!-- Bottom Metric Strip -->
+  <g transform="translate(60, 415)">
+    <text x="0" y="14" fill="#94A3B8" font-family="monospace" font-size="10">PIPELINE SPECS:</text>
+    <text x="120" y="14" fill="#E2E8F0" font-family="monospace" font-size="10">ALGORITHM: <tspan fill="#10B981">K-MEANS CLUSTERING</tspan></text>
+    <text x="340" y="14" fill="#E2E8F0" font-family="monospace" font-size="10">OPTIMIZATION: <tspan fill="#F59E0B">ELBOW + SILHOUETTE</tspan></text>
+    <text x="580" y="14" fill="#E2E8F0" font-family="monospace" font-size="10">SAMPLE: <tspan fill="#38BDF8">MAHASISWA UMB</tspan></text>
+  </g>
+</svg>

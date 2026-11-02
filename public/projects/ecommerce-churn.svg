@@ -1,0 +1,67 @@
+<svg width="800" height="480" viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="480" fill="#0C0E12" />
+  <!-- Editorial Grid Background -->
+  <line x1="60" y1="60" x2="740" y2="60" stroke="#1E232D" stroke-width="1" />
+  <line x1="60" y1="120" x2="740" y2="120" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="60" y1="180" x2="740" y2="180" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="60" y1="240" x2="740" y2="240" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="60" y1="300" x2="740" y2="300" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="60" y1="360" x2="740" y2="360" stroke="#1E232D" stroke-width="1" />
+  
+  <line x1="60" y1="60" x2="60" y2="360" stroke="#1E232D" stroke-width="1" />
+  <line x1="200" y1="60" x2="200" y2="360" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="340" y1="60" x2="340" y2="360" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="480" y1="60" x2="480" y2="360" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="620" y1="60" x2="620" y2="360" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="740" y1="60" x2="740" y2="360" stroke="#1E232D" stroke-width="1" />
+
+  <!-- Title / Label -->
+  <text x="60" y="44" fill="#64748B" font-family="monospace" font-size="11" letter-spacing="1.5">FIG 01 // COHORT SURVIVAL RETENTION CURVE (N=102,400)</text>
+  <text x="740" y="44" text-anchor="end" fill="#3B82F6" font-family="monospace" font-size="11" font-weight="600">RETENTION: +18.4%</text>
+
+  <!-- Baseline curve -->
+  <path d="M 60 120 C 180 230, 320 280, 740 310" stroke="#334155" stroke-width="2" stroke-dasharray="4 4" fill="none" />
+  
+  <!-- Optimized Area Gradient -->
+  <defs>
+    <linearGradient id="curveGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+  <path d="M 60 120 C 220 160, 420 210, 740 240 L 740 360 L 60 360 Z" fill="url(#curveGrad)" />
+  <!-- Optimized Main Curve -->
+  <path d="M 60 120 C 220 160, 420 210, 740 240" stroke="#3B82F6" stroke-width="3" fill="none" />
+
+  <!-- Data Point Nodes -->
+  <circle cx="60" cy="120" r="5" fill="#3B82F6" stroke="#0C0E12" stroke-width="2" />
+  <circle cx="200" cy="155" r="5" fill="#3B82F6" stroke="#0C0E12" stroke-width="2" />
+  <circle cx="340" cy="192" r="5" fill="#3B82F6" stroke="#0C0E12" stroke-width="2" />
+  <circle cx="480" cy="216" r="6" fill="#60A5FA" stroke="#0C0E12" stroke-width="2" />
+  <circle cx="620" cy="231" r="5" fill="#3B82F6" stroke="#0C0E12" stroke-width="2" />
+  <circle cx="740" cy="240" r="5" fill="#3B82F6" stroke="#0C0E12" stroke-width="2" />
+
+  <!-- Point Callout -->
+  <line x1="480" y1="216" x2="480" y2="140" stroke="#60A5FA" stroke-width="1" stroke-dasharray="2 2" />
+  <rect x="420" y="105" width="120" height="28" rx="4" fill="#172554" stroke="#3B82F6" stroke-width="1" />
+  <text x="480" y="123" text-anchor="middle" fill="#DBEAFE" font-family="monospace" font-size="10" font-weight="600">DAY 35 RE-TARGET</text>
+
+  <!-- Heatmap Matrix Bar below -->
+  <g transform="translate(60, 395)">
+    <text x="0" y="14" fill="#64748B" font-family="monospace" font-size="10">RFM TIER:</text>
+    <rect x="70" y="2" width="110" height="18" fill="#1E3A8A" rx="2" />
+    <text x="125" y="15" text-anchor="middle" fill="#93C5FD" font-family="monospace" font-size="9">CHAMPIONS (39%)</text>
+
+    <rect x="190" y="2" width="110" height="18" fill="#1E293B" rx="2" />
+    <text x="245" y="15" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="9">LOYAL (24%)</text>
+
+    <rect x="310" y="2" width="110" height="18" fill="#1E293B" rx="2" />
+    <text x="365" y="15" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="9">POTENTIAL (18%)</text>
+
+    <rect x="430" y="2" width="110" height="18" fill="#312E81" rx="2" />
+    <text x="485" y="15" text-anchor="middle" fill="#C7D2FE" font-family="monospace" font-size="9">AT-RISK (12%)</text>
+
+    <rect x="550" y="2" width="110" height="18" fill="#450A0A" rx="2" />
+    <text x="605" y="15" text-anchor="middle" fill="#FCA5A5" font-family="monospace" font-size="9">HIBERNATING (7%)</text>
+  </g>
+</svg>

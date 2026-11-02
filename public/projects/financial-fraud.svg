@@ -1,0 +1,61 @@
+<svg width="800" height="480" viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="480" fill="#0C0E12" />
+  <!-- Grid -->
+  <line x1="60" y1="60" x2="740" y2="60" stroke="#1E232D" stroke-width="1" />
+  <line x1="60" y1="360" x2="740" y2="360" stroke="#1E232D" stroke-width="1" />
+  
+  <text x="60" y="44" fill="#64748B" font-family="monospace" font-size="11" letter-spacing="1.5">FIG 03 // ANOMALY DENSITY &amp; ISOLATION SCATTER (CLASS IMBALANCE: 0.2%)</text>
+  <text x="740" y="44" text-anchor="end" fill="#F59E0B" font-family="monospace" font-size="11" font-weight="600">RECALL: 94.2% @ 0.38% FPR</text>
+
+  <!-- Dense Normal Clusters (Grey/Slate dots) -->
+  <g opacity="0.45">
+    <!-- Cluster 1 -->
+    <circle cx="160" cy="220" r="2.5" fill="#64748B" /><circle cx="170" cy="210" r="2.5" fill="#64748B" /><circle cx="180" cy="230" r="3" fill="#64748B" />
+    <circle cx="190" cy="215" r="2" fill="#64748B" /><circle cx="165" cy="240" r="3" fill="#64748B" /><circle cx="175" cy="225" r="2" fill="#64748B" />
+    <circle cx="210" cy="210" r="2" fill="#64748B" /><circle cx="200" cy="235" r="3" fill="#64748B" /><circle cx="185" cy="205" r="2" fill="#64748B" />
+    
+    <!-- Cluster 2 Dense center -->
+    <circle cx="280" cy="180" r="3" fill="#64748B" /><circle cx="290" cy="190" r="2.5" fill="#64748B" /><circle cx="300" cy="175" r="3" fill="#64748B" />
+    <circle cx="310" cy="195" r="2" fill="#64748B" /><circle cx="320" cy="185" r="2.5" fill="#64748B" /><circle cx="330" cy="170" r="3" fill="#64748B" />
+    <circle cx="285" cy="165" r="2.5" fill="#64748B" /><circle cx="295" cy="185" r="3" fill="#64748B" /><circle cx="305" cy="160" r="2" fill="#64748B" />
+    <circle cx="315" cy="175" r="2.5" fill="#64748B" /><circle cx="325" cy="195" r="3" fill="#64748B" /><circle cx="335" cy="180" r="2" fill="#64748B" />
+    
+    <!-- Cluster 3 -->
+    <circle cx="440" cy="250" r="2.5" fill="#64748B" /><circle cx="450" cy="260" r="3" fill="#64748B" /><circle cx="460" cy="245" r="2" fill="#64748B" />
+    <circle cx="470" cy="255" r="3" fill="#64748B" /><circle cx="480" cy="240" r="2.5" fill="#64748B" /><circle cx="490" cy="265" r="2" fill="#64748B" />
+    <circle cx="445" cy="235" r="3" fill="#64748B" /><circle cx="455" cy="270" r="2" fill="#64748B" /><circle cx="465" cy="230" r="2.5" fill="#64748B" />
+  </g>
+
+  <!-- Decision Boundary Ellipses -->
+  <ellipse cx="250" cy="205" rx="130" ry="70" stroke="#334155" stroke-width="1.5" stroke-dasharray="3 3" fill="none" />
+  <ellipse cx="460" cy="250" rx="60" ry="40" stroke="#334155" stroke-width="1.5" stroke-dasharray="3 3" fill="none" />
+  <text x="250" y="125" text-anchor="middle" fill="#64748B" font-family="monospace" font-size="10">NORMAL DISTRIBUTION REGION (&gt;99.7%)</text>
+
+  <!-- Anomaly / Fraud Outliers (High Velocity & Synthetic Burst) -->
+  <!-- Outlier group 1 -->
+  <circle cx="640" cy="110" r="7" fill="#EF4444" stroke="#7F1D1D" stroke-width="2" />
+  <circle cx="640" cy="110" r="14" stroke="#EF4444" stroke-width="1" stroke-dasharray="2 2" opacity="0.7" />
+  <circle cx="660" cy="95" r="6" fill="#EF4444" stroke="#7F1D1D" stroke-width="2" />
+  <circle cx="625" cy="130" r="5" fill="#EF4444" stroke="#7F1D1D" stroke-width="2" />
+  
+  <!-- Boundary Callout -->
+  <line x1="640" y1="110" x2="550" y2="90" stroke="#EF4444" stroke-width="1" />
+  <rect x="420" y="75" width="130" height="26" rx="3" fill="#380A0A" stroke="#EF4444" stroke-width="1" />
+  <text x="485" y="92" text-anchor="middle" fill="#FECACA" font-family="monospace" font-size="9" font-weight="600">BURST BOT TRANSACTIONS</text>
+
+  <!-- Outlier group 2 -->
+  <circle cx="670" cy="290" r="6" fill="#F59E0B" stroke="#78350F" stroke-width="2" />
+  <circle cx="690" cy="310" r="6" fill="#F59E0B" stroke="#78350F" stroke-width="2" />
+  <line x1="670" y1="290" x2="570" y2="310" stroke="#F59E0B" stroke-width="1" />
+  <rect x="460" y="300" width="110" height="24" rx="3" fill="#2E1C07" stroke="#F59E0B" stroke-width="1" />
+  <text x="515" y="316" text-anchor="middle" fill="#FDE68A" font-family="monospace" font-size="9" font-weight="600">GEODISTANCE ANOMALY</text>
+
+  <!-- Metric Strip -->
+  <g transform="translate(60, 395)">
+    <text x="0" y="14" fill="#94A3B8" font-family="monospace" font-size="10">SCORE MATRIX:</text>
+    <text x="120" y="14" fill="#E2E8F0" font-family="monospace" font-size="10">PR-AUC: <tspan fill="#10B981">0.914</tspan></text>
+    <text x="240" y="14" fill="#E2E8F0" font-family="monospace" font-size="10">ROC-AUC: <tspan fill="#10B981">0.988</tspan></text>
+    <text x="360" y="14" fill="#E2E8F0" font-family="monospace" font-size="10">LATENCY: <tspan fill="#38BDF8">&lt; 42ms</tspan></text>
+    <text x="500" y="14" fill="#E2E8F0" font-family="monospace" font-size="10">PROTECTED: <tspan fill="#F59E0B">$410,000</tspan></text>
+  </g>
+</svg>

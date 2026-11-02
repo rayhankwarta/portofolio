@@ -1,0 +1,135 @@
+<svg width="800" height="480" viewBox="0 0 800 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="480" fill="#0C0E12" />
+  <!-- Editorial Grid Background -->
+  <line x1="60" y1="60" x2="740" y2="60" stroke="#1E232D" stroke-width="1" />
+  <line x1="60" y1="120" x2="740" y2="120" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="60" y1="180" x2="740" y2="180" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="60" y1="240" x2="740" y2="240" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="60" y1="300" x2="740" y2="300" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="60" y1="360" x2="740" y2="360" stroke="#1E232D" stroke-width="1" />
+
+  <line x1="60" y1="60" x2="60" y2="360" stroke="#1E232D" stroke-width="1" />
+  <line x1="410" y1="60" x2="410" y2="360" stroke="#1E232D" stroke-width="1" stroke-dasharray="2 4" />
+  <line x1="740" y1="60" x2="740" y2="360" stroke="#1E232D" stroke-width="1" />
+
+  <!-- Title / Label -->
+  <text x="60" y="44" fill="#64748B" font-family="monospace" font-size="11" letter-spacing="1.5">FIG 02 // B2B TRANSACTION NETWORK &amp; COHORT ANALYTICS (N=50,000)</text>
+  <text x="740" y="44" text-anchor="end" fill="#06B6D4" font-family="monospace" font-size="11" font-weight="600">BITLABS BOOTCAMP // PAPER.ID</text>
+
+  <!-- Left: Social Network Graph (Buyer-Seller Hubs) -->
+  <text x="60" y="86" fill="#94A3B8" font-family="monospace" font-size="10" font-weight="600">BUYER-SELLER INTERACTION GRAPH (SNA)</text>
+
+  <!-- Edges between network nodes -->
+  <line x1="160" y1="200" x2="270" y2="140" stroke="#0891B2" stroke-width="2.5" stroke-opacity="0.6" />
+  <line x1="160" y1="200" x2="280" y2="240" stroke="#06B6D4" stroke-width="3" stroke-opacity="0.8" />
+  <line x1="160" y1="200" x2="110" y2="120" stroke="#334155" stroke-width="1.5" />
+  <line x1="160" y1="200" x2="90" y2="270" stroke="#334155" stroke-width="1.5" />
+  <line x1="270" y1="140" x2="350" y2="110" stroke="#0891B2" stroke-width="2" stroke-opacity="0.5" />
+  <line x1="270" y1="140" x2="280" y2="240" stroke="#0891B2" stroke-width="1" stroke-dasharray="2 2" stroke-opacity="0.4" />
+  <line x1="280" y1="240" x2="360" y2="220" stroke="#06B6D4" stroke-width="2.5" stroke-opacity="0.7" />
+  <line x1="280" y1="240" x2="340" y2="290" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Nodes with Glow -->
+  <!-- Central Buyer Hub -->
+  <circle cx="160" cy="200" r="18" fill="#164E63" stroke="#06B6D4" stroke-width="2" />
+  <text x="160" y="204" text-anchor="middle" fill="#E0F2FE" font-family="monospace" font-size="9" font-weight="700">HUB_B1</text>
+
+  <!-- Central Seller Hub -->
+  <circle cx="280" cy="240" r="22" fill="#0E7490" stroke="#22D3EE" stroke-width="2" />
+  <text x="280" y="244" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="9" font-weight="700">SELLER_S1</text>
+
+  <!-- Secondary Nodes -->
+  <circle cx="270" cy="140" r="14" fill="#1E293B" stroke="#0891B2" stroke-width="1.5" />
+  <text x="270" y="144" text-anchor="middle" fill="#BAE6FD" font-family="monospace" font-size="8">S_02</text>
+
+  <circle cx="110" cy="120" r="10" fill="#1E293B" stroke="#64748B" stroke-width="1" />
+  <text x="110" y="123" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="7">B_08</text>
+
+  <circle cx="90" cy="270" r="10" fill="#1E293B" stroke="#64748B" stroke-width="1" />
+  <text x="90" y="273" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="7">B_12</text>
+
+  <circle cx="350" cy="110" r="11" fill="#1E293B" stroke="#64748B" stroke-width="1" />
+  <text x="350" y="113" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="7">S_07</text>
+
+  <circle cx="360" cy="220" r="12" fill="#1E293B" stroke="#06B6D4" stroke-width="1.5" />
+  <text x="360" y="223" text-anchor="middle" fill="#BAE6FD" font-family="monospace" font-size="8">B_03</text>
+
+  <circle cx="340" cy="290" r="9" fill="#1E293B" stroke="#64748B" stroke-width="1" />
+  <text x="340" y="293" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="7">B_21</text>
+
+  <!-- Z-Score Callout -->
+  <rect x="70" y="325" width="280" height="26" rx="4" fill="#082F49" stroke="#0284C7" stroke-width="1" />
+  <text x="80" y="342" fill="#7DD3FC" font-family="monospace" font-size="10" font-weight="600">INTERACTION Z-SCORE: TOP 1% PAIRS</text>
+
+  <!-- Right: Cohort Decay & Promo Abuse Detection Panel -->
+  <text x="440" y="86" fill="#94A3B8" font-family="monospace" font-size="10" font-weight="600">RETENTION COHORT &amp; PROMO MONITORING</text>
+
+  <!-- Mini Heatmap Grid for Cohort Analysis -->
+  <g transform="translate(440, 104)">
+    <!-- Row labels -->
+    <text x="0" y="14" fill="#94A3B8" font-family="monospace" font-size="9">Cohort M1</text>
+    <text x="0" y="32" fill="#94A3B8" font-family="monospace" font-size="9">Cohort M2</text>
+    <text x="0" y="50" fill="#94A3B8" font-family="monospace" font-size="9">Cohort M3</text>
+    <text x="0" y="68" fill="#94A3B8" font-family="monospace" font-size="9">Cohort M4</text>
+
+    <!-- Cells M1 -->
+    <rect x="70" y="4" width="36" height="14" rx="2" fill="#0E7490" />
+    <rect x="110" y="4" width="36" height="14" rx="2" fill="#155E75" />
+    <rect x="150" y="4" width="36" height="14" rx="2" fill="#164E63" />
+    <rect x="190" y="4" width="36" height="14" rx="2" fill="#1E3A5F" />
+    <rect x="230" y="4" width="36" height="14" rx="2" fill="#0F172A" />
+
+    <!-- Cells M2 -->
+    <rect x="70" y="22" width="36" height="14" rx="2" fill="#0E7490" />
+    <rect x="110" y="22" width="36" height="14" rx="2" fill="#164E63" />
+    <rect x="150" y="22" width="36" height="14" rx="2" fill="#1E3A5F" />
+    <rect x="190" y="22" width="36" height="14" rx="2" fill="#0F172A" />
+
+    <!-- Cells M3 -->
+    <rect x="70" y="40" width="36" height="14" rx="2" fill="#0E7490" />
+    <rect x="110" y="40" width="36" height="14" rx="2" fill="#155E75" />
+    <rect x="150" y="40" width="36" height="14" rx="2" fill="#164E63" />
+
+    <!-- Cells M4 -->
+    <rect x="70" y="58" width="36" height="14" rx="2" fill="#0E7490" />
+    <rect x="110" y="58" width="36" height="14" rx="2" fill="#164E63" />
+    <text x="275" y="70" fill="#38BDF8" font-family="monospace" font-size="8">log1p Retention</text>
+  </g>
+
+  <!-- Promo Exploitation Alert Box -->
+  <g transform="translate(440, 195)">
+    <rect width="280" height="65" rx="5" fill="#1C1917" stroke="#F97316" stroke-width="1" stroke-opacity="0.6" />
+    <circle cx="20" cy="22" r="6" fill="#F97316" />
+    <text x="36" y="21" fill="#FFEDD5" font-family="monospace" font-size="10" font-weight="700">PROMO EXPLOIT DETECTOR</text>
+    <text x="36" y="35" fill="#CBD5E1" font-family="monospace" font-size="9">Threshold: Promo usage &gt; 3x per buyer</text>
+    <text x="36" y="50" fill="#FDBA74" font-family="monospace" font-size="9" font-weight="600">Flagged Accounts: Isolating Margin Leakage</text>
+    <rect x="210" y="12" width="60" height="20" rx="3" fill="#7C2D12" />
+    <text x="240" y="26" text-anchor="middle" fill="#FED7AA" font-family="monospace" font-size="9" font-weight="700">FLAGGED</text>
+  </g>
+
+  <!-- Transaction Value Metrics Banner -->
+  <g transform="translate(440, 275)">
+    <rect width="280" height="55" rx="5" fill="#082F49" stroke="#0284C7" stroke-width="1" />
+    <text x="14" y="22" fill="#7DD3FC" font-family="monospace" font-size="10" font-weight="600">B2B PAYMENT VOLUME DYNAMICS</text>
+    <text x="14" y="38" fill="#BAE6FD" font-family="monospace" font-size="9">Avg Tx: <tspan fill="#38BDF8" font-weight="600">Rp 19.65 Juta</tspan> | Max: <tspan fill="#38BDF8" font-weight="600">Rp 20.14 M</tspan></text>
+  </g>
+
+  <!-- Bottom Technical Strip -->
+  <g transform="translate(60, 395)">
+    <text x="0" y="14" fill="#64748B" font-family="monospace" font-size="10">CAPSTONE PIPELINE:</text>
+    <rect x="130" y="2" width="110" height="18" fill="#0E7490" rx="2" />
+    <text x="185" y="15" text-anchor="middle" fill="#E0F2FE" font-family="monospace" font-size="9">SQLITE IN-MEMORY</text>
+
+    <rect x="250" y="2" width="115" height="18" fill="#164E63" rx="2" />
+    <text x="307" y="15" text-anchor="middle" fill="#BAE6FD" font-family="monospace" font-size="9">NETWORKX (SNA)</text>
+
+    <rect x="375" y="2" width="125" height="18" fill="#1E293B" rx="2" />
+    <text x="437" y="15" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="9">COHORT HEATMAP</text>
+
+    <rect x="510" y="2" width="120" height="18" fill="#1E293B" rx="2" />
+    <text x="570" y="15" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="9">PROMO EXPLOITATION</text>
+
+    <rect x="640" y="2" width="80" height="18" fill="#065F46" rx="2" />
+    <text x="680" y="15" text-anchor="middle" fill="#6EE7B7" font-family="monospace" font-size="9">50K ROWS</text>
+  </g>
+</svg>
